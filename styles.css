@@ -1,0 +1,73 @@
+/* Center align the form */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the panel */
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(183, 69%, 27%);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the form */
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    background-color: #5ddedc !important;
+}
+
+
+
+
+/* Style the form elements */
+input[type="text"],
+textarea,
+input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Style the navigation tabs */
+.panel ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Make the navigation items a flex container */
+    justify-content: space-between; /* Spread items across the width */
+}
+
+
+
+.panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* Style the form elements */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+input[type="submit"] {
+    width: 100% !important;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: #f2103dd0;
+    font-size: 50px;
+}

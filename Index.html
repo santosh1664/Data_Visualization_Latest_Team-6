@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <title>Team-6</title>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+        .column {
+        float: left;
+            padding: 5px;
+            height: 450px; 
+        }
+
+        .left {
+            width: 40%;
+        }   
+
+        .right {
+            width: 60%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .registration-container {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+            text-align: center;
+            height: 100vh;
+        }
+        h4 {
+            color: #0b0b0b;
+            font-size: 20px;
+            text-align: center;
+        }
+        h3 {
+            color: #d00d31f1;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #45cac3;
+            font-size: 45px;
+        }
+
+        h1 {
+            color: #f2103dd0;
+        }
+
+        .input-group {
+            margin: 15px 0;
+            text-align:center;
+        }
+        
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #0a0101;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+
+        }
+
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 100%;
+        color: rgb(191, 15, 15);
+        text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="registration-container">
+<h1>Data Visualization for Blind People</h1>
+
+<div class="row">
+  <div class="column left" style="background-color:#367593b0;">
+
+        <div class="input-group">
+            <h3> Admin Login</h3>
+            <form action="#" method="post" id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="text">    
+                    <label for="password">Password:</label></div>
+                <div class="form-group">
+                
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="button">
+                    <br>
+                    <button type="submit" text-align="left" >Login</button>
+                </div>
+                <a href="Admin_login.html"><h4>Admin please click here</h4></a>
+                <a href="signup.html"><h4>Click here to Sign up!</h4></a>
+                
+                
+            </form>
+            <div class="error-message" id="error-message"></div>
+        </div>
+  </div>
+  <div class="column right">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Witness the future for blind People</h2>
+  </div>
+</div>
+<div class="footer">
+    <a href="Contact.html">Contact us</a>
+  </div>
+
+  <script>
+    // This is a simple client-side validation, not secure for production use.
+    document.getElementById("login-form").addEventListener("submit", function (e) 
+    {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "admin") {
+            // Replace "yourusername" and "yourpassword" with actual username and password.
+            // Redirect to a success page or perform necessary actions.
+            alert("Login successful");
+            window.location.assign("Home.html")
+        } else {
+            document.getElementById("error-message").textContent = "Incorrect username or password.";
+        }
+    });
+</script>
+</body>
+</html>

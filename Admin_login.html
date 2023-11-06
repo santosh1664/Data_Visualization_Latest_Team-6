@@ -140,7 +140,7 @@
   </div>
 </div>
 <div class="footer">
-    <li><a href="Contact.html">Contact us</a></li>
+    <a href="Contact.html">Contact us</a>
   </div>
   <script>
     // This is a simple client-side validation, not secure for production use.
@@ -153,6 +153,7 @@
             // Replace "yourusername" and "yourpassword" with actual username and password.
             // Redirect to a success page or perform necessary actions.
             alert("Login successful");
+            window.location.assign("Home.html")
         } else {
             document.getElementById("error-message").textContent = "Incorrect username or password.";
         }

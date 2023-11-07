@@ -1,0 +1,108 @@
+/* Center align the form */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: top;
+    padding: 10px;
+    top: 0;
+    width: auto;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the panel */
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(183, 69%, 27%);
+    color: rgb(227, 10, 10);
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the form */
+form {
+    border: 5px solid #141414;
+    padding: 50px;
+    width: 600px;
+    background-color: #5ddedc61 !important;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    color: rgb(191, 15, 15);
+    text-align: center;}
+    .link {
+        position: fixed;
+        left: 0;
+        bottom:0;
+        width: 100%;
+        color: rgb(144, 29, 29);
+        text-align: center;}
+    
+
+
+
+/* Style the form elements */
+input[type="text"],
+textarea,
+input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 90px;
+    background-color: #1e728970;
+}
+
+/* Style the navigation tabs */
+.panel ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Make the navigation items a flex container */
+    justify-content: space-between; /* Spread items across the width */
+}
+
+
+
+.panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* Style the form elements */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+input[type="submit"] {
+    width: 100% !important;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+h1 {
+    color: #f2103dd0;
+    font-size: 50px;
+}
+h5 {
+    color: #000000;
+    font-size: 35px;
+}
+p1{
+    font-size: 22px;
+}

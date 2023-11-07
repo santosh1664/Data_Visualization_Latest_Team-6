@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="background-image: url('Images/bg.jpg'); background-size: cover; background-repeat: no-repeat;">
+    <div class="panel">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><a href="learnmore.html">Learn More</a></li>
+            <li><a href="Index.html">Logout</a></li>
+        </ul>
+    </div>
+    <form action="URL to form script" method="POST">
+
+        Enter Name: <br>
+        <input type="text" name="realname"><br><br>
+        
+        Enter Contact Number: <br>
+        <input type="number" name="number"><br><br>
+
+        Enter Mail ID: <br>
+        <input type="email" name="email"><br><br>
+        
+        Enter Description: <br>
+        <textarea name="comments" rows="5" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit"onClick="showMessage()">
+        <script type="text/javascript">
+            function showMessage() {
+                alert("Thanks for Your Valuable Feedback");
+                window.location.assign("Home.html")
+            }
+        </script>
+
+</form>
+<div class="footer">
+    <a href="Contact.html">Contact us</a>
+  </div>
+    
+</body>
+</html>

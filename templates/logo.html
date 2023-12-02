@@ -1,0 +1,539 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="{% static 'css/normalize.min.css' %}">
+<script src="{% static 'js/prefixfree.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/w3.css' %}">
+    <style>
+        .w3-theme-l5 {color:#000 !important; background-color:#ebeffa !important}
+.w3-theme-l4 {color:#000 !important; background-color:#bbc9ee !important}
+.w3-theme-l3 {color:#fff !important; background-color:#7893dd !important}
+.w3-theme-l2 {color:#fff !important; background-color:#345ccc !important}
+.w3-theme-l1 {color:#fff !important; background-color:#223e89 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#101c3e !important}
+.w3-theme-d2 {color:#fff !important; background-color:#0e1937 !important}
+.w3-theme-d3 {color:#fff !important; background-color:#0c1631 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#0a132a !important}
+.w3-theme-d5 {color:#fff !important; background-color:#091023 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#ebeffa !important}
+.w3-theme-dark {color:#fff !important; background-color:#091023 !important}
+.w3-theme-action {color:#fff !important; background-color:#091023 !important}
+
+.w3-theme {color:#fff !important; background-color:#122047 !important}
+.w3-text-theme {color:#122047 !important}
+.w3-border-theme {border-color:#122047 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#122047 !important}
+.w3-hover-text-theme:hover {color:#122047 !important}
+.w3-hover-border-theme:hover {border-color:#122047 !important}
+
+    </style>
+
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+html {
+  font-size: 6.25vmax;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(45deg, #dfe0fb, #fef6bf);
+  font-family: "Fredoka One", cursive;
+  display: flex;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+  color: lightsteelblue;
+  display: inline-block;
+  z-index: -1;
+  top: -5px;
+  left: 3px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.title::before, .title::after {
+  content: attr(data-text);
+}
+
+
+.title::before {
+  text-anchor: middle;
+  position: absolute;
+}
+
+.star-wrapper .star {
+  position: absolute;
+  font-size: 0.4rem;
+  color: pink;
+  display: inline-block;
+  -webkit-animation: scaling 1s both infinite alternate;
+          animation: scaling 1s both infinite alternate;
+}
+.star-wrapper .star::before, .star-wrapper .star::after {
+  content: "✦";
+}
+.star-wrapper .star::after {
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+}
+.star-wrapper .star::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+.star-wrapper .star:nth-of-type(1) {
+  top: 68%;
+  left: 32%;
+  color: paleturquoise;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.star-wrapper .star:nth-of-type(2) {
+  top: 33%;
+  left: 87%;
+  color: khaki;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.star-wrapper .star:nth-of-type(3) {
+  top: 55%;
+  left: 21%;
+  color: thistle;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.star-wrapper .star:nth-of-type(4) {
+  top: 52%;
+  left: 68%;
+  color: thistle;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.star-wrapper .star:nth-of-type(5) {
+  top: 21%;
+  left: 56%;
+  color: peachpuff;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.star-wrapper .star:nth-of-type(6) {
+  top: 20%;
+  left: 40%;
+  color: lightsalmon;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.star-wrapper .star:nth-of-type(7) {
+  top: 56%;
+  left: 9%;
+  color: lightsalmon;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star-wrapper .star:nth-of-type(8) {
+  top: 13%;
+  left: 43%;
+  color: pink;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star-wrapper .star:nth-of-type(9) {
+  top: 46%;
+  left: 26%;
+  color: paleturquoise;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star-wrapper .star:nth-of-type(10) {
+  top: 49%;
+  left: 57%;
+  color: paleturquoise;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star-wrapper .star:nth-of-type(11) {
+  top: 39%;
+  left: 58%;
+  color: lightsalmon;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.star-wrapper .star:nth-of-type(12) {
+  top: 69%;
+  left: 89%;
+  color: paleturquoise;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star-wrapper .star:nth-of-type(13) {
+  top: 64%;
+  left: 49%;
+  color: peachpuff;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.star-wrapper .star:nth-of-type(14) {
+  top: 95%;
+  left: 93%;
+  color: peachpuff;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.star-wrapper .star:nth-of-type(15) {
+  top: 43%;
+  left: 84%;
+  color: thistle;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.cross-wrapper .cross {
+  position: absolute;
+  font-size: 0.3rem;
+  color: pink;
+  display: inline-block;
+  -webkit-animation: scaling 1s both infinite alternate;
+          animation: scaling 1s both infinite alternate;
+}
+.cross-wrapper .cross::before, .cross-wrapper .cross::after {
+  content: "●";
+}
+.cross-wrapper .cross::after {
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+}
+.cross-wrapper .cross::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: -1;
+}
+.cross-wrapper .cross:nth-of-type(1) {
+  top: 38%;
+  left: 49%;
+  color: khaki;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.cross-wrapper .cross:nth-of-type(2) {
+  top: 66%;
+  left: 59%;
+  color: thistle;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.cross-wrapper .cross:nth-of-type(3) {
+  top: 92%;
+  left: 71%;
+  color: pink;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.cross-wrapper .cross:nth-of-type(4) {
+  top: 41%;
+  left: 27%;
+  color: thistle;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.cross-wrapper .cross:nth-of-type(5) {
+  top: 62%;
+  left: 7%;
+  color: lightsalmon;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.cross-wrapper .cross:nth-of-type(6) {
+  top: 27%;
+  left: 80%;
+  color: thistle;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.cross-wrapper .cross:nth-of-type(7) {
+  top: 16%;
+  left: 90%;
+  color: khaki;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.cross-wrapper .cross:nth-of-type(8) {
+  top: 16%;
+  left: 48%;
+  color: paleturquoise;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.cross-wrapper .cross:nth-of-type(9) {
+  top: 28%;
+  left: 60%;
+  color: khaki;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.cross-wrapper .cross:nth-of-type(10) {
+  top: 64%;
+  left: 63%;
+  color: khaki;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.cross-wrapper .cross:nth-of-type(11) {
+  top: 87%;
+  left: 93%;
+  color: lightsalmon;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.cross-wrapper .cross:nth-of-type(12) {
+  top: 88%;
+  left: 26%;
+  color: pink;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.cross-wrapper .cross:nth-of-type(13) {
+  top: 55%;
+  left: 15%;
+  color: lightsalmon;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.cross-wrapper .cross:nth-of-type(14) {
+  top: 93%;
+  left: 94%;
+  color: pink;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.cross-wrapper .cross:nth-of-type(15) {
+  top: 40%;
+  left: 43%;
+  color: thistle;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes scaling {
+  0% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(0.8);
+  }
+}
+
+svg text {
+  font-size: 1rem;
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 2px;
+  animation: animated-stroke 3s;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  z-index: 2;
+}
+
+@keyframes animated-stroke {
+  0% {
+    stroke-dasharray: 0 80%;
+  }
+  100% {
+    stroke-dasharray: 10% 0%;
+    stroke-dashoffset: 25%;
+  }
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="z-index: -10">
+<div class="star-wrapper">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+</div>
+<div class="cross-wrapper">
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+  <div class="cross"></div>
+</div>
+</div>
+   <svg width="100%" style="position: absolute;">
+   <text x="50%" y="50%" >Data Visualization</text>
+   </svg>
+   <div class="title" data-text="Data Visualization" ></div>
+   <div class="container w3-theme w3-round-xxlarge" style="position: absolute; top: 80%; height: 50px">
+       <div class="texts" style="margin-left: 20px;margin-right: 20px">
+       </div>
+   </div>
+   <p align="center" style="position: absolute; top: 90%; font-size: 30px">Hold Space for 2 seconds to toggle Speech Synthesis
+   </p>
+{#   <audio id="myAudio" src="{% static 'audio/welcome.mp3' %}" type="audio/mpeg" autoplay></audio>#}
+{#    <script>#}
+{#document.addEventListener("DOMContentLoaded", function() {#}
+{#    var audioElement = document.getElementById('myAudio');#}
+{#    audioElement.play();#}
+{#});#}
+{#    </script>#}
+    <audio id="audioOn" src="{% static 'audio/Synthesis_on.mp3' %}"></audio>
+    <audio id="audioOff" src="{% static 'audio/Synthesis_off.mp3' %}"></audio>
+    <script>
+        document.addEventListener('keydown', handleKeyDown);
+document.addEventListener('keyup', handleKeyUp);
+
+let spacebarPressedTime;
+let timeoutId;
+let savedState;
+
+function handleKeyDown(event) {
+    if (event.code === 'Space' && !timeoutId) {
+        spacebarPressedTime = new Date();
+        timeoutId = setTimeout(toggleState, 2000);
+    }
+}
+
+function handleKeyUp(event) {
+    if (event.code === 'Space') {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+    }
+}
+
+function toggleState() {
+    const audioOn = document.getElementById('audioOn');
+    const audioOff = document.getElementById('audioOff');
+    savedState = getCookie('toggleState');
+
+    if (new Date() - spacebarPressedTime >= 2000) {
+
+        if (savedState === 'off') {
+            setCookie('toggleState', 'on', 7);
+            audioOn.play();
+        } else {
+            setCookie('toggleState', 'off', 7);
+            audioOff.play();
+        }
+    }
+
+    timeoutId = null;
+}
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+// Play the audio based on the cookie value when the page loads
+window.onload = () => {
+    savedState = getCookie('toggleState');
+    const audioOn = document.getElementById('audioOn');
+
+    if (savedState === 'on') {
+        audioOn.play();
+    }
+}
+
+    const texts = document.querySelector(".texts");
+
+window.SpeechRecognition =
+  window.SpeechRecognition || window.webkitSpeechRecognition;
+
+const recognition = new SpeechRecognition();
+recognition.interimResults = true;
+
+let p = document.createElement("p");
+recognition.addEventListener("result", (e) => {
+  texts.appendChild(p);
+  const text = Array.from(e.results)
+    .map((result) => result[0])
+    .map((result) => result.transcript)
+    .join("");
+
+  p.innerText = text;
+  if (e.results[0].isFinal) {
+      if (text.includes("visualization")) {
+      p.innerText = "Opening Visualization Page....";
+      console.log(p.innerText);
+      window.top.location = '/home';
+    }
+  }
+});
+
+recognition.addEventListener("end", () => {
+    if (getCookie('toggleState') === 'on') {
+        recognition.start();}
+    else{ recognition.stop(); }
+});
+
+    if (getCookie('toggleState') === 'on') {
+        recognition.start();
+    }else{ recognition.stop(); }
+
+</script>
+</body>
+</html>

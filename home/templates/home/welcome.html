@@ -1,0 +1,12 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% load plotly_dash %}
+    <div id="initial-cookie-value" style="display:none;">{{ cookie_value }}</div>
+
+    <div class="{% plotly_class name='SimpleGraph' %} card" style="overflow: hidden;height: 100%; width: 100%">
+    {% plotly_app name='SimpleGraph' ratio=0.50 %}
+    </div>
+<br>
+    {{ plot1 | safe }}
+{% endblock %}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "arcane-boulder-404003",
+  "private_key_id": "8a768e21b658fc087e596e71c733853232536f6a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDS739JtmXf6WTV\nARZeVd9Y7wOg+z6lKMic49sxbxYeyJ+5QlRXNJ+A3yjcD6zV6hQMDapgG1ujXWAp\npDIQzaFuTr49JriiSB1Sn9TRpiV8extAKj/N94InRtTX/K40IBm5xY5BZ6rYYCux\n55PkoyhdfDhAg9OM7QIV6t4cA0f5ns+Ui5pv6AVenxfB7txUWfetaIwrPNn4ARvV\nsLPgO+GdChviKTn7QIgOBu24fgTVue75Mh9mA9vZsZSIzW6odMsxfF2877R/E9ib\nzoyT8ub1BcM71y5NsrUKWQS0WVYElw9BFOyBUSF6R0qgkWcfd5eR2oIqzMHidEDN\nQv43TspXAgMBAAECggEAX0ukDgFBdS9URob/PA8/oEYbNZdMbgFG4NpwJJ0zOSUa\nQ/AbempjxS0MoJ7UTrA57lgeKN0zQVLmJunvVHgR/mvEtovPzkEWPkXHOA//z4Uu\ngoaT3NF9E5GEhy+45AO8m5kM86+KF8ca9nzQ6/JqQhHkuADWikxpLM23GqDA25x5\n3H9kJXNUZS3p+q3YG7vTKWDFJW5pJdJ+X7uvqBrSlJ3bWfEfa5lTO21EqllPV93p\nQHTKnboJNmoHyZ+Jq8I5BLnidF41zVsMU5RWAW27CN2FL7zCJ3Fbj0j1Xus3Qp1e\nN+14UFyJC8uBvl769O53falohMC3bF40jo5w3iZzAQKBgQDsLPb+wn9/8Lw2uw4J\nuaNX3cFhveVQdvFn87I44t5gOcqvctsh8VwdDKblkHmFmUIFqjQT6K6Z4CbtgciF\nc995fxKMZKKHclhz0YDxhdRilR8qg4q7S10derSpsm+/lhED05xKw6EBCRTzcquA\nxtRUpTqNhJwrgB8Bz/wg21ztpwKBgQDkpCm78CmPYqkhASN6mxgqCbji2eirSrsj\n2b614+OakhKIPjl4JRHfhD3KqsRuNchY01UanbvYwzb4wV7N2sQs6EWmDy644bNa\n+troRMz+40AwbzzemiIabRY9MjA5+DO5e+VdoHTEKncMUhFlhFdX2OdJQrZCBXUg\nKtWRgjOz0QKBgQC/Zz2RgB2GmZpfnL8mwI0Rs8V6qkSDLrI8dfLVSX/BanTKNgJE\nAvCNFmjYGXty+57XKnZkQCnoyRGjYJAbH6pYM9TbdN+Hd/MZggvHMZfLgWEtukef\nvNctAfoSoWsRUNRfTosWyG7egPa6yg8WIY2JQBMxB+ztEDuQ43dJRZ6NdwKBgHv4\n40QrKW28sjXaFzGwjL6mfOBMBVNzdtsugrC/OzchgvjqvGB/wRwv6Q1N4KpdcR9w\nn1GKO0OCPflNaCk4OGydGL68trm6b3SiVjXgsEJ4V+KrPhb4/grUIV3XK70S7oDh\nQ/GrQgTnfZtpmFMyGeXhDy9zA73ylZp2f0yhi4UxAoGAWcPAuMJJ1Ca93BG5ARnW\nwRB9AXyD6+80ewaPSsvjzgnfYzuSJBJwJRE6im700Xvh41jeLGmL7y0tpGAYG8qc\nfcHNY4E220ASQdh1XKBp5RqhcE0dU2ZUDZePELn3VHhvblMH4VfGHfKmPNJLOC8+\nylfxZVzFp6+aJMf/6Y78tck=\n-----END PRIVATE KEY-----\n",
+  "client_email": "texttospeech@arcane-boulder-404003.iam.gserviceaccount.com",
+  "client_id": "108634948473000095769",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/texttospeech%40arcane-boulder-404003.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
